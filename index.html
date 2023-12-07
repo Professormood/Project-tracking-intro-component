@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Project tracking intro component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./main/output.css">
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="relative z-10"> 
+
+    <span id="bg-color" class="absolute"></span>
+    <!-- Nav -->
+    <nav class="container mx-auto">
+      <!-- flex container -->
+      <div
+        class="flex my-10 px-5 justify-between items-center">
+        <!-- image -->
+        <div>
+          <img src="./images/logo.svg" alt="" />
+        </div>
+        <!-- nav links -->
+        <div class="uppercase hidden space-x-10 items-center md:flex">
+          <ul class="flex flex-row items-center space-x-6">
+            <li>
+              <a
+                href="#"
+                class="font-semibold text-[1rem] transition-all duration-200 hover:underline-offset-4 hover:underline"
+                >PRODUCT</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-semibold text-[1rem] transition-all duration-200 hover:underline-offset-4 hover:underline"
+                >FEATURES</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-semibold text-[1rem] transition-all duration-200 hover:underline-offset-4 hover:underline"
+                >PRICING</a
+              >
+            </li>
+          </ul>
+          <span class="bg-slate-600 rounded-full h-2 w-2"></span>
+          <a
+            href="#"
+            class="text[1rem] text-slate-600 transition-all duration-200 hover:underline-offset-4 hover:underline"
+            >LOGIN</a
+          >
+        </div>
+        <button class=" hamburger block md:hidden focus:outline-none " id="menu-btn">
+          <span class="hamburger-top "></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>  
+      </div>
+      <div class="md:hidden">
+        <div id="menu" class="absolute flex-col text-center  hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-xl border">
+          <a href="#" class="hover:underline hover:underline-offset-2">PRODUCT</a>
+          <a href="#" class="hover:underline hover:underline-offset-2">FEATURES</a>
+          <a href="#" class="hover:underline hover:underline-offset-2">PRICING</a>
+          <button class="text-gray-500">LOGIN</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto my-32">
+      <!-- flex container -->
+      <div
+        class="flex flex-col-reverse top-0 justify-between mb-6 items-center md:relative md:flex-row md:pb-0"
+      >
+        <div>
+          <!-- text -->
+          <div
+            class="flex flex-col space-y-5 max-w-[42rem] py-5 text-center md:text-start md:py-0"
+          >
+            <h1 class="text-lx text-gray-500 tracking-widest uppercase">
+              <span class="bg-slate-800 text-white px-2 py-2 rounded-2xl"
+                >new</span
+              >
+              Monograph Dashboard
+            </h1>
+            <h1
+              class="text-3xl font-extrabold tracking-wide pb-8 uppercase md:text-6xl"
+            >
+              Powerful insights into your team
+            </h1>
+            <p class="text-lg pb-5 text-gray-500">
+              Project planning and time tracking for agile teams
+            </p>
+          </div>
+          <!-- button -->
+          <div class="space-x-5 flex text-center md:text-start justify-center items-center md:justify-start md:items-center">
+            <button
+              class="uppercase font-semibold bg-[#FF5E5E] text-white text-sm rounded-md px-3 py-4 hover:opacity-70 md:py-4 md:px-5 md:text-xl"
+            >
+              Schedule a demo
+            </button>
+            <a
+              href="#"
+              class="tracking-widest uppercase text-sm text-gray-400 md:text-xl"
+              >to see a live preview
+            </a>
+          </div>
+        </div>
+        <!-- right img -->
+        <div class="-right-44 top-0 pb-16  md:absolute md:pb-0">
+          <img src="./images/illustration-devices.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="pt-10">
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Santosh Das</a>.
+      </p>
+    </footer>
+    <script src="./main/script.js"></script>
+  </body>
+</html>
